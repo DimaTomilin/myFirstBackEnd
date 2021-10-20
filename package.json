@@ -1,0 +1,23 @@
+{
+  "name": "myFirstBackEnd",
+  "version": "1.0.0",
+  "description": "## Node",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./back/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimaTomilin/myFirstBackEnd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DimaTomilin/myFirstBackEnd/issues"
+  },
+  "homepage": "https://github.com/DimaTomilin/myFirstBackEnd#readme",
+  "dependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
