@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/DimaTomilin/myFirstBackEnd#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "nodemon": "^2.0.14"
   }
 }
