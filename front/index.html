@@ -4,16 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Cyber4s Form</title>
 </head>
-<body>
-
+  <body>
+    <header>
+      <h1 id="title">Cyber4s Form</h1>
+      <p id="description"> This form will help us to decide who will start the course.</p>
+    </header>
+    <main>
+      <div id="form">
+        <div class="form-element">
+          <label for="name">
+            <legend class="legend">Full Name</legend>
+          </label>
+          <input id="name" type="text" placeholder="Enter your name" >
+        </div>
+        <div class="form-element">
+          <label  for="email">
+            <legend class="legend">Email</legend>
+          </label>
+          <input id="email" type="email" placeholder="Enter your email">
+        </div>
+        <div class="form-element">
+            <label for="age">
+              <legend class="legend">How old are you?</legend>
+            </label>
+            <input id="age" type="text" placeholder="Enter your age">
+        </div>
+        <div class="form-element">
+          <label for="number">
+            <legend class="legend">How much you want to start the course?</legend>
+          </label>
+          <input id="number" type="number" min="1" max="10" placeholder="1-elemantary  10-insanely hard">
+        </div>
+        <div class="form-element">
+          <label for="dropdown">
+            <legend class="legend">Did you know HTML, CSS or JS?</legend>
+          </label>
+          <select id="dropdown">
+            <option >Yes I did</option>
+            <option >More yes than no</option>
+            <option >More no than yes</option>
+            <option >No I did`t</option>
+          </select>
+        </div>
+        <div class="form-element">
+          <legend class="legend">Is your English good enough?</legend>
+          <label for="definitely">
+            <input id="definitely" type="radio" name="english" value="definitely">
+            Definitely
+          </label><br>
+          <label for="so-so">
+            <input id="so-so" type="radio" name="english" value="so-so">
+            So-so
+          </label><br>
+          <label for="absolutely-no">
+            <input id="absolutely-no" type="radio" name="english" value="absolutely-no">
+            Absolutely-no
+          </label>
+        </div>
     
-
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.6.0/validator.min.js" integrity="sha512-xYHcfaQeUiKHs9YsHqjpyLaHnh+q7y8kYuOGdh5FkJeK7Z+dZct7Yoa7h+PtsrKRh03t8eJZuSeCN7b0dkrFwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src='index.js' defer ></script>
-</body>
+        <div class="form-element">
+          <label for="comments">
+            <legend class="legend">Your abilities which can help you to succeed?</legend>
+          </label>
+          <textarea id="abilities" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div>
+          <button id="submit">Submit</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Thank you for your participation!<br> We will contact you!</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>
